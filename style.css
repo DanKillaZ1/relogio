@@ -1,0 +1,52 @@
+html, body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url(EPyazPzW4AQIHtf.jpg) ;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-size: cover;  
+        
+}
+.relogio{
+    
+    opacity: 2.0;
+    
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.display{
+    
+    opacity: 1.8;    
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.821);
+    font-size: 7rem;    
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.footer, p{    
+    font-size: 28px;		
+    color: #dee4e4; 
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+
+	   
+    
+   
+    
+   
+
+    
+    
+}

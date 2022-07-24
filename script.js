@@ -1,22 +1,25 @@
-function atualizarTempo(){
-    var display = document.querySelector('.display');
-    
-    var agora = new Date();
-    
-    var horario = corrigirHorario(agora.getHours()) + ':' + corrigirHorario(agora.getMinutes()) + ':' + corrigirHorario(agora.getSeconds());
-    
-    display.textContent = horario;
+const horas = document.getElementById('horas');
+const minutos = document.getElementById('minutos');
+const segundos = document.getElementById('segundos');
 
-}
-function corrigirHorario(numero){
-    if(numero < 10){
-        return '0' + numero;
+const relogio = setInterval(function time(){
+    let date = new Date();
+    let hora = date.getHours();
+    let min = date.getMinutes();
+    let seg = date.getSeconds();
+
+    if(hora < 10){
+        hora = '0' + hora;
     }
-    return numero;
-}
+    if(min < 10){
+        min = '0' + min;
+    }
+    if(seg < 10){
+        seg = '0' + seg;
+    }
 
-atualizarTempo();
-setInterval(atualizarTempo, 1000);
-
-console.log(horario);
-
+    horas.textContent = hora;
+    minutos.textContent = min;
+    segundos.textContent = seg;   
+   
+})

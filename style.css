@@ -1,53 +1,49 @@
-html, body{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    
-    background-image: url(EPyazPzW4AQIHtf.jpg) ;
-    background-repeat: no-repeat;
+@import url('http://fonts.cdnfonts.com/css/stanley');
 
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    background-size: cover;  
-        
+*{
+    font-family: 'Stanley', sans-serif;
+    
 }
+
+body{
+    height: 100vh;
+    background: url(EPyazPzW4AQIHtf.jpg) no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+}
+
 .relogio{
-    
-    opacity: 2.0;
-    
-    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.5);
+    margin: 0 auto;
+}
+.relogio div{
+    height: 170px;
+    width: 150px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.display{
-    
-    opacity: 1.8;    
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 10px;
-    color:  rgba(124, 215, 151, 0.821);
-    font-size: 7rem;    
-    font-family: 'Hind Siliguri', sans-serif;
-}
-.footer, p{    
-    font-size: 28px;		
-    color:   rgba(124, 215, 151, 0.821);
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-	transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5,5,5,0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
 
-	   
-    
-   
-    
-   
-
-    
-    
 }
+.relogio span{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.relogio span.tempo{
+    font-size: 10px;
+}
+
+
+
